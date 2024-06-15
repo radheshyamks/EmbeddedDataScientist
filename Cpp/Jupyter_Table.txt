@@ -1,0 +1,53 @@
+ |Temperature(In Celsius) |Ice Creame Sales| 
+|-----|:-----|
+|20|2000|
+|25|2500|
+|35|5000|
+|43|7800|
+
+ |Temperature(In Celsius) |Ice Creame Sales| 
+|-----|:-----|
+|20|2000|
+|25|2500|
+|35|5000|
+|43|7800|
+
+|Heights(In CM)|164|167.3|170|174.2|178|180|186|
+
+1. Generate a Table
+(1) Generate a table using Markdown
+It is very handy and direct to quickly make a table using Markdown syntax in a Jupyter notebook. For example, let’s create the following table with three rows and four columns.
+
+We just need to type the following Markdown syntax:
+
+|Name |Gender|Age  |Origin | 
+|-----|:-----|:---:|:-----:|
+|Jack |Male  |23   |USA    |
+|Susan|Female|22   |Canada |
+The first row is always the table header followed by an extra line with dashes 
+“-” and optional colons “:” to align text in the columns. 
+— — —is defaultly for right alignment,: — — — for left alignment, : — — —: for center 
+alignment and — — —:for right alignment.
+
+| Heights(In CM) | "164"|"167.3"|"170"|"174.2"|"178"|"180"|"186"|
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+
+|Original Data|
+|:-----------:|
+|Body Weight(KG)|Body Height(CM)|
+|:------------|-------------:|
+|86|185|
+|82|191|
+|74|181|
+|73|170|
+|62|168|
+|61|157|
+|:--:|:---:|
+|mean=73|mean=175.33|
+|SD=10.16|SD=12.56|
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+ip address -> Internet Protocol
+ipconfig in command prompt
+ipconfig /all
+192.168.56.1
+
+ping ip_address
+
+
+
+
+1.2.	Overview of the Project
+The AP0300 Imaging System Processor (ISP) from ON Semiconductor is a complex System-on-a-Chip (SoC) that interfaces one or more CMOS Image Sensors with an automotive imaging system. It is equipped with several processing subsystems that each handle a different aspect of the system. These processing subsystems all work together to seamlessly transform a raw image stream from the sensor(s) into viewable and/or pre-processed machine vision streams in a variety of video formats. Cruise custom 2MP camera module uses this ISP AP0300. PathPartner is developing the custom firmware to support system functionality, peripherals, and custom functionality.
+
+The project includes development of software modules include I2C bring-up with AR0233 camera sensor, IMU sensor IAM-20680HP, RH/T sensor - HTU21A, EEPROM and ADC ADS7138-Q1. Also supporting of different camera operating modes and storage of calibration data. The project involves design, development and testing of these modules/drivers and integration of all these modules to form an image pipeline. Functional safety at various levels (software and system) is to be taken care to meet necessary safety goals as recommended by ISO26262:2018 Part 6 for ASIL B.

@@ -1,0 +1,50 @@
+2,147,483,647 = 0x7FFFFFFF
+-2,147,483,648 = 0x80000000
+
+I prepared my introduction last year and I really got success with this introduction -
+
+"Hi!!! I am <Radheshyam> and I have 3 years of industry experience in White box testing,
+ 
+I completed my graduation in Aeronautical Engineering in year <2017> and I have interests in ,
+ Psychology, and Reading books.
+
+Tell the interviewer you have a good experience,
+ I'm ready for the challenge, I can work in any adverse situations,
+ and I have diversified skills.
+
+ IT work is about having the fundamental
+ understanding and zeal to solve problems - if you have that you are going to successful.
+Cruise Gen2 2MP Camera Firmware Development Software Integration Test Strategy and Plan
+
+
+G2_2MP_Software_for_Autonomous_Vehicle_Integration_Plan
+
+
+AP0300
+Fakra cable
+log it self validation as streaming
+make sure log is assured
+log is part of testing
+Master test report is in testing
+
+Hi Mahesha,
+
+I'm living in BTM.
+It is 12km from the PP
+i don't have personal vehicle
+
+Now a days taking public transport is not safe. you know very well.
+
+Within one or two months i'm planning to shift near to HAL.
+
+for bullet point in excel
+alt+7
+insert -> symbol-> search for bullet point
+=CHAR(149)
+=CHAR(149) & " "
+
+discussion about test report
+1. user guide is still not finalized
+2. we have written test case based on old user guide
+3. we have to see the nwe user guide and we've to write test case based on it.
+4. 

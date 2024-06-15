@@ -1,0 +1,27 @@
+Memory layout:
+1. Command-line arguments and Environment variables
+2. Stack -> It grows from higher to lower compile time
+3. Heap -> It grows from lower to higher run time
+4. Bss -> It stores Uninitialized global variables and static variable
+5. data -> It stores Initialized global and static variables(read-only, read-write)
+6. Text -> It contains Executable file and instructions
+
+Bss -> block started by symbol
+It has two section
+1. Initialized section
+2. Uninitialized section
+Storage class
+Auto ->
+Register
+Static
+Extern
+typedef
+Auto:
+Auto variables get stored in stack section
+Life-time of this type of variables is within the block
+Visibility is aslo within the block
+Accessibility is aslo within the block
+
+Register:
+This type of variable get stored in CPU registers
+For this type of variables execution is very fast

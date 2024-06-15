@@ -1,0 +1,52 @@
+#include <stdio.h>
+struct abc{
+	int i;
+	char C;
+	int y;
+};
+struct Node{
+	int data;
+	struct Node* next;
+};
+struct Node *Head = NULL;
+NEw->Next
+1 2 3 4 5
+1 2 3 6 4 5
+
+3 > Next = &
+
+
+*Head, *Next
+100		100+L
+
+(char*)Next - (char*)Head
+
+str = 
+
+
+char *string = "Shyam"
+	Sizeof (string); = 4
+	Sizeof(*string);
+	Sizeof (“string”) = 7
+name = "Shyam"
+
+class abc{
+	private; public, protected
+	int x;
+	int *p;
+	abc(int y){p = new int(10);}
+	~abc(){ delete[] p;}
+};
+class A{
+	virtual void fun()=0;
+};
+Memory layout
+
+vx_kernels_pp_cancontrols_target.c --> 100% statement and branch
+vx_pp_cc_dms_host.c --> tivxAddKernelPpCcDmsValidate --> 98% statement and 72% branch
+vx_pp_cc_dms_host.c --> tivxAddKernelPpCcDms --> 95% statement and 68% branch
+tivx_pp_cancontrols_node_api.c --> 100%
+pp_vx_rgbir_splitter.c --> pp_vx_rgbir_splitter_kernel_init --> 72% statement and 54% branch
+app_remote_service_linux.c --> appRemoteServiceRpmsgRxTaskMain --> 64% statement and 50% branch
+pp_vx_kernel_rgbir_splitter.c --> ppvxRgbIrSplitterCreate --> 74% statement 42% branch
+

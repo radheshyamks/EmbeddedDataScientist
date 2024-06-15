@@ -1,0 +1,237 @@
+int x=10;
+int y=20;
+x= x+y; // 30
+y = x-y;
+x = x-y;
+Saurabh Kumar Agrawal
+Gopalakrishnan Sreeju
+9742773355
+PATHPARTNER TECHNOLOGY PRIVATE LIMITED
+16, PSS Plaza, 1st & 2nd Floor, New Thippasandra Main Road, HAL 3rd Stage, Bangalore - 560075
+
+Indiqube Survey No. 19/4, 227, Kadubeesanahalli Village, Hobli Road, Bangalore –
+560087
+34613
+
+Binsoft Techno Solutions
+No: 63, Vellalar Street, 1st Floor
+Adambakkam, Chennai-600088
+Ph- 044 43322190
+BTSJUL1734
+Ex1475
+
+13-B, Indraprastha Estate, Delhi 110002
+
+Hi Sreeju,
+Hope you are doing well.
+
+I'm persuing M.Tech and exam is near(In december).
+So I'm planning to resign.
+So that I can prepare for exam.
+And I've Some personal work as well.
+I'm planning to go home as well.
+
+Hi Sreeju,
+I hope you are doing well.
+I'm planning to resign today.
+I've M.Tech Exam in december last.
+Family circumstances currently require my full time and attention.
+
+Email Subject Line: Resignation – Your Name
+
+Dear Mr./Ms. Lastname,
+
+Please accept this message as my formal resignation from Company XYZ. My final day will be March 15, two weeks from today. Family circumstances currently require my full time and attention.
+
+Please let me know how I can be of assistance during this transition.
+
+I am so grateful for my five years at this company, and will look back fondly on the support and kindness I received from management and colleagues.
+
+In the future, you can reach me at my personal email (firstname.lastname@email.com) or on my cell phone (555-555-5555).
+
+Thank you again, and I look forward to staying in touch.
+
+Sincerely,
+
+Your Name
+
+
+Resignation – Radheshyam Kumar Singh EId: 060909
+
+Hi Nayana,
+
+Please accept this message as my formal resignation from Company Path Partner Technology of Senior Software position effective from 28-sep-2021.
+My final day will be Dec 28, 12 weeks from today.
+
+Please let me know how I can be of assistance during this transition.
+
+I am so grateful for my five years at this company, and will look back fondly on the support and kindness I received from management and colleagues.
+
+In the future, you can reach me at my personal email (radheshyams51@email.com) or on my cell phone +91-7258923734.
+
+Thank you again, and I look forward to staying in touch.
+
+Sincerely,
+
+Radheshyam Kumar Singh
+
+
+
+Hello {Name of Manager},
+
+With a heavy heart, I must convey to you my goodbye. It was a difficult decision to make, but I had to do it nonetheless.
+
+I believe it is time for me to seek new ventures and opportunities.
+
+I would take this opportunity to express my sincere gratitude towards you.
+
+You had been a great mentor, guide, and friend to me.
+
+I learned a lot from you. I learned to balance my work and family, undertake challenging projects that I didn’t feel confident about at first, and meet deadlines despite being under pressure.
+
+I will carry all that I learned here to my next adventure and look back at my time in this office fondly.
+
+I hope we will keep in touch even after I leave the company.
+
+Please don’t hesitate to reach out to me whenever you want. My email address is {Email Address}.
+
+Thank you so much for being such an amazing leader and for supporting me in all my endeavours.
+
+Know that I wish the best to you and our company!
+
+Best regards,
+{Your name}
+
+
+
+Subject line: Thank you for everything
+
+Hello Sreeju,
+
+With a heavy heart, I must convey to you my goodbye. It was a difficult decision to make, but I had to do it nonetheless.
+
+I would take this opportunity to express my sincere gratitude towards you.
+
+You had been a great mentor, guide, and friend to me.
+
+I learned a lot from you. I learned to balance my work and family, undertake challenging projects that I didn’t feel confident about at first, and meet deadlines despite being under pressure.
+
+I will carry all that I learned here to my next adventure and look back at my time in this office fondly.
+
+I hope we will keep in touch even after I leave the company.
+
+Please don’t hesitate to reach out to me whenever you want. My email address is radheshyams51@gmail.com.
+
+Thank you so much for being such an amazing leader and for supporting me in all my endeavours.
+
+Know that I wish the best to you and our company!
+
+Best regards,
+Radheshyam
+
+
+Subject Line: Moving On
+Hi team,
+
+As you may already know, today is my last day of work at {Company Name}.
+
+While I am very excited about the next phase in my career, I am also a bit sad saying goodbye to you all.
+
+I would like to convey my gratitude for the unending support and guidance that I have received throughout my tenure in this organization.
+
+My time spent here taught me more than I could have hoped for.
+
+I loved working on our group projects and the meals that we shared while brainstorming for new ideas. I will truly cherish all these memories.
+
+Now, it's time for me to move forward towards a new path and explore new possibilities.
+
+I will be moving to {City Name} with my family next month. However, I hope to keep in touch.
+
+I will be available on my email address {Email Address} or on my cell phone {Phone Number}.
+
+Thank you again for these fantastic {x years/months}.
+
+I wish you all the best. Hope to see you soon.
+
+Thanks and regards,
+{Your Name}
+
+Subject: Good Bye & Thank You!!
+Subject Line: Moving On
+Hi team,
+
+Today is my last day of work at Path Partner Technology.
+
+While I am very excited about the next phase in my career, I am also a bit sad saying goodbye to you all.
+
+I would like to convey my gratitude for the unending support and guidance that I have received throughout my tenure in this organization.
+
+My time spent here taught me more than I could have hoped for.
+
+I loved working on our group projects and the meals that we shared while brainstorming for new ideas. I will truly cherish all these memories.
+
+Now, it's time for me to move forward towards a new path and explore new possibilities.
+
+I hope to keep in touch.
+
+I will be available on my email address radheshyams51@gmail.com or on my cell phone +91-7258923734.
+
+Thank you again for these fantastic 14 Months.
+
+I wish you all the best. Hope to see you soon.
+
+Thanks and regards,
+Radheshyam
+
+Subject: Farewell | Last but not the least.
+Hello All,
+
+Finally its time to say Good Bye!!
+
+Good Byes are not easy, but sometimes they are inevitable.
+
+[Company name or Project name] will always hold a special place in my heart as it is from where my career journey kicked off.
+
+I entered in the firm as a graduate hire but will be leaving it with so much of learning and experience. I had the good fortune of being associated with such a helpful and encouraging team. This account is a vast ocean of knowledge and I am glad I was able to gain so much from it.
+
+Let me make it easier than saying Good bye; Let me tell you Hello in advance for the next time I get to see you :)
+
+Last but not the least find my details for contact:
+[Facebook Contact]
+[Gmail Contact]
+[Mobile Contact]
+
+Subject: Farewell | Last but not the least.
+Hello All,
+
+Finally its time to say Good Bye!!
+
+Good Byes are not easy, but sometimes they are inevitable.
+
+Path Partner Technology will always hold a special place in my heart.
+
+I entered in the firm as a graduate hire but will be leaving it with so much of learning and experience.
+I had the good fortune of being associated with such a helpful and encouraging team.
+This account is a vast ocean of knowledge and I am glad I was able to gain so much from it.
+
+Let me make it easier than saying Good bye; Let me tell you Hello in advance for the next time I get to see you :)
+
+Last but not the least find my details for contact:
+radheshyams51@gmail.com
+[Gmail Contact]
+[Mobile Contact]
+
+PathPartner Technology Pvt. Ltd.
+
+#16, "PSS Plaza", 1st and 2nd Floor
+
+New Thippasandra Main Road
+
+H.A.L. III Stage, Bangalore - 560 075 (INDIA)
+
+T: +91-80-6772 2000
+
+
+PATHPARTNER TECHNOLOGY PRIVATE LIMITED
+16, PSS Plaza, 1st & 2nd Floor, New Thippasandra Main Road, HAL 3rd Stage, Bangalore - 560075
++91-8970973885

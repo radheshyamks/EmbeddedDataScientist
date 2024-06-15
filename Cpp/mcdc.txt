@@ -1,0 +1,32 @@
+(A&&B)||(C||D)
+A B C D
+T F F T --> T
+T F F F --> F  4,6
+T F T F --> T
+T T F F --> T
+F T F F --> F
+
+A && B
+T T  --> T 1
+F T  --> F
+T F  --> F
+
+int* p=NULL;
+{
+ int x;
+ p=&x;
+}
+*p=10;
+
+
+9708941792	April --> 23 mid night --> 3 times
+May --> 16 times
+July --> 1 times
+
+7991138054 --> Aug --> 12 times
+July --> 10 times
+April --> 5 times
+Sept --> 2 times
+
+7739015470 --> july --> 6 times
+Sept --> 5 times

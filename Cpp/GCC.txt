@@ -1,0 +1,10 @@
+vDso
+
+ld filename.o -o exefilename -lc -lm // link with c library and math library
+
+nm - list symbols from object files
+nm exefilename
+man nm
+
+man readefl
+file exefilename

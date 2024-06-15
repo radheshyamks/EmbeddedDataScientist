@@ -1,0 +1,50 @@
+sleep
+poweroff
+shutdown now
+alt+f2
+su - username -> to switch from one user to another user.
+To fix the username
+vi ~/.bashrc
+source ~/.bashrc
+lsb_realese -a -> to check your ubuntu release
+
+There is two package for locate the file
+1. locate
+2. mlocate -> this one is the better version
+https://arxiv.org/ftp/arxiv/papers/1408/1408.4523.pdf
+http://www.ijirct.org/papers/IJIRCT1709003.pdf
+R38148829
+I'm working from home.
+Please accept regularization.
+
+https://github.com/linux-test-project/ltp/tree/master/testcases
+https://www.gnu.org/software/make/manual/make.html
+
+https://www.gnu.org/software/make/manual/make.html#toc-Overview-of-make
+
+https://ppone.pathpartnertech.com/#/
+
+support.boat-lifestyle.com
+
+10/05/2002
+
+
+RoshaniKumari0205
+RoshaniKumari0205@gmail.com
+Roshani@011
+
+
+Request for Item Repair
+If you opt to have your defective item repaired, you can follow below process.
+
+Go to the Online Returns Center.
+Select “Return Items”, choose the item needing repair.
+Tag as defective. Describe the issue in the comments section. Be as detailed as possible to aid evaluation.
+Some DIY repair will be suggested, if it still does not work, then
+Process the delivery to the service provider. Check if the delivery addresses are correct.
+Print the return label and follow all handling and packaging instructions.
+Note:
+
+The service provider can directly contact you to gather information.
+If there are detached items, include these to the return package.
+Final Thoughts

@@ -1,0 +1,7 @@
+''' your text ''' --> it make your text small.
+* your text* --> It will make your text bold and dark.
+*_~ your text ~_* -->
+~ your text ~  --> it will make your text line cut.
+*_ your text _ --> It will make your text italic style.
+~* your text *~ --> It will make your text mix bold and Italic.
+_ your text _ --> It will make your text bold

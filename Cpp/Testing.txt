@@ -1,0 +1,112 @@
+Testing:
+Hi All,
+I'm Radheshyam.
+I've three years of experience in white box tesing/ Unit and Integration Testing.
+Currently I'm working in Eximius Design as Software Engineer.
+I've done Aeronautical Engineering.
+
+
+There are two types of White box testing:
+1. Mutation Testing -> We will insert the bug try to catch it by writing test cases.
+2. Coverage based Testing -> Path, Condtion, Branch/Decision, MC/DC, Statement
+
+cyclomatic matrix
+Draw the control flow diagram
+Count the bounded areas and add + 1 will give cyclomatic complexity
+EX:
+McCabe's Matric
+E-N+2-> Formula
+#include <stdio.h>
+int a=10;
+int b=20;
+int main()
+{
+  while(a>b){
+    c = a*b;
+    b = a-1;
+  }
+  print(b,c);
+}
+Control Flow graph
+|--------------|-------------
+|			 Node1			|
+|			   |			|
+|			 Node2			|
+|			   |			|
+|            Node3			|
+|______________|		  Node4
+
+E -> Number of edges
+N- > Number of node
+E = 4
+N = 4
+E-N+2 = 4-4+2 = 2
+The Cyclomatic complexity is 2 for this control flow
+or number of Closed region + 1
+In this graph there is only one closed region
+Hence
+1+1 = 2
+There will be two test cases in this program.
+or
+Count how many if, else if, while and for are there and add 1.
+
+White Box Testing is also called Structural Testing
+
+
+
+SDLC:
+Software Development Life Cycle
+1. Waterfall model
+2. V model
+3. Agile Model
+4. Spiral model
+Waterfall Model
+
+Requirement Analysis			------> Requirements Documents
+		   \
+		System Design			------> Software architecture
+			 \
+			Coding				------> Software
+				\
+				Testing			------> Software
+				
+				
+V Model
+Requirement Analysis
+		  \
+		System Design
+			\
+		   coding
+			  \
+			  Unit Testing
+			    \
+				System Integration Tesing
+				  \
+				  Acceptance Testing
+				  
+				  
+Requirement Analysis		Acceptance Tesing
+     \						   /
+	  \						  /
+	  System Design		System Integration Tesing
+	    \					/
+		 \			   	   /
+		 Coding		 	Unit Testing
+		   \		 	/
+		    \__________/
+			  
+			  
+			  
+Requirement analysis	<----  Acceptance test Design	---->		Acceptance Test
+		\																/
+		 \									   			   			   /
+		System Design	<----    System	test design		---->	System test
+			\								 					 	 /
+			 \										   			    /
+	Architecture Design <---Integrtation test Design---> Integration Test
+				\								  				   /
+				 \										  		  /
+			Module design<----	Unit test design  ---->		  Unit testing
+				   \____________________________________________/				
+					\					Coding			   	   /
+					 \________________________________________/

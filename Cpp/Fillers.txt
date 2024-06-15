@@ -1,0 +1,69 @@
+Fillers in English
+
+Shirley: Okay. These brownies are, uh—
+
+Pierce: Uh!
+
+Shirley: They, um—
+
+Pierce: Um!
+
+Shirley: These brownies are delicious. They taste like–
+
+Pierce: Like!
+
+Shirley: That’s not a filler word.
+
+“Uhh. Umm. Well, you see.. My dog ate it.”
+“It was a really big bear, you know?”
+Well
+Um/er/uh
+Hmm
+4. Like
+5. Actually/Basically/Seriously
+ “totally,” “literally” and “clearly.”
+ You see
+  You know
+   I mean
+    You know what I mean?
+	At the end of the day
+	 Believe me
+	  I guess/I suppose
+	  Or something
+	  Okay/so
+	   Right/mhm/uh huh
+	   
+	   
+@ECHO OFF
+if EXIST "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" goto UNLOCK
+if NOT EXIST Private goto MDPrivate
+:CONFIRM
+echo Are you sure to lock this folder? (Y/N)
+set/p "cho=>"
+if %cho%==Y goto LOCK
+if %cho%==y goto LOCK
+if %cho%==n goto END
+if %cho%==N goto END
+echo Invalid choice.
+goto CONFIRM
+:LOCK
+ren Private "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
+attrib +h +s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
+echo Folder locked
+goto End
+:UNLOCK
+echo Enter password to Unlock Your Secure Folder
+set/p "pass=>"
+if NOT %pass%== NikkiMRadhe@011 goto FAIL
+attrib -h -s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
+ren "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" Private
+echo Folder Unlocked successfully
+goto End
+:FAIL
+echo Invalid password
+goto end
+:MDPrivate
+md Private
+echo Private created successfully
+goto End
+:End

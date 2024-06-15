@@ -1,0 +1,68 @@
+
+
+
+
+Manual test bech setup for system testing
+1.Power to be connect to ECU
+2.ECU will have various port ,
+some are connected to epb, some are connected to brake hardware
+some port are connect to CANOE/CANALYSER which is act vehicle can, what port to be connect to whome 
+customer has to provide a contratual document
+3.vehicle can connect to host pc.
+
+
+temp sensor --- 
+range -20, 70
+check level oil 
+
+Testcase-1
+input
+Set Temp sense = -20
+
+output
+Temp sense == -20
+
+Check level oil
+
+Test case - 2:
+input
+Set Temp sense (<= 70 && >=-20)
+
+Output 
+Temp sense <= 70 && >=-20
+Check level oil
+
+
+Test case - 3 for negative
+input
+Set Temp sense !(<= 70 && >=-20)
+
+Output 
+Temp sense !(<= 70 && >=-20)
+!(Check level oil)
+
+
+https://ncert.nic.in/textbook/pdf/khpy106.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if(PBcomError == 7 || LifeSgn != 7 || FatalError == 1)
+
+
+
+
+L=[1,2,3]
+print(L)
+x=sort(L)
+print(x)

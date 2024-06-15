@@ -1,0 +1,110 @@
+npp_save
+cd "$(CURRENT_DIRECTORY)"
+g++  "$(FILE_NAME)" -o $(NAME_PART) -march=native -O3
+NPP_RUN $(NAME_PART)
+
+
+hi this is my first laptop
+i don't want to buy this laptop because of financial problem.
+But anyhow i bought this laptop and finally i've a laptop.
+This is ridiculous for me in this time.
+
+Here are the scripts for some popular programming languages:
+
+C/C++:
+gcc “$(FULL_CURRENT_PATH)”
+cmd /c “$(CURRENT_DIRECTORY)\a.exe”
+
+Java:
+npp_save
+javac “$(FULL_CURRENT_PATH)”
+java “$(NAME_PART)”
+
+Python:
+npp_save
+python “$(FULL_CURRENT_PATH)”
+
+C#:
+npp_save
+csc “$(FULL_CURRENT_PATH)”
+$(CURRENT_DIRECTORY)\$(NAME_PART).exe
+
+How To compile a C file in notepadd++
+Goto plugin --> Goto to plugin admin --> Select NppExec --> ok
+Types of error while testing a software :
+
+1. Uninitialized pointer
+2. Control flow error
+3. Data flow error
+4. functionality error or logical Error
+5. Syntatic error (Like mismatching the swud and source code)
+6. Calculation Errors:
+
+These errors occur due to any of the following reasons:
+
+* Bad logic
+* Incorrect formulae
+* Data type mismatch
+* Coding errors
+* Function call issues , etc.
+
+
+
+
+
+Boundary value analysis
+
+Equivalence Partitioning
+In this method, the input domain data is divided into different equivalence data classes.
+This method is typically used to reduce the total number of test cases to a finite set of testable test cases, still covering maximum requirements.
+
+In short, it is the process of taking all possible test cases and placing them into classes. One test value is picked from each class while testing.
+
+For Example, If you are testing for an input box accepting numbers from 1 to 1000 then there is no use in writing thousand test cases for all 1000 
+valid input numbers plus other test cases for invalid data.
+
+Using the Equivalence Partitioning method above test cases can be divided into three sets of input data called classes. Each test case is representative of a respective class.
+
+So in the above example, we can divide our test cases into three equivalence classes of some valid and invalid inputs.
+
+Test cases for input box accepting numbers between 1 and 1000 using Equivalence Partitioning:
+
+#1) One input data class with all valid inputs. Pick a single value from range 1 to 1000 as a valid test case. If you select other values between 1
+ and 1000 the result is going to be the same. So one test case for valid input data should be sufficient.
+
+#2) Input data class with all values below the lower limit. I.e. any value below 1, as an invalid input data test case.
+
+#3) Input data with any value greater than 1000 to represent the third invalid input class.
+
+So using Equivalence Partitioning you have categorized all possible test cases into three classes. Test cases with other values from any class should give you the same result.
+
+We have selected one representative from every input class to design our test cases. Test case values are selected in such a way that largest number of
+ attributes of equivalence class can be exercised.
+
+Equivalence Partitioning uses fewest test cases to cover maximum requirements.
+
+
+* Boundary Value Analysis
+It's widely recognized that input values at the extreme ends of the input domain cause more errors in the system.
+ More application errors occur at the boundaries of the input domain. ‘Boundary Value Analysis' Testing technique is used to identify errors at boundaries
+ rather than finding those that exist in the center of the input domain.
+
+Boundary Value Analysis is the next part of Equivalence Partitioning for designing test cases where test cases are selected at the edges of the equivalence classes.
+
+Test cases for input box accepting numbers between 1 and 1000 using Boundary value analysis:
+
+#1) Test cases with test data exactly as the input boundaries of input domain i.e. values 1 and 1000 in our case.
+
+#2) Test data with values just below the extreme edges of input domains i.e. values 0 and 999.
+
+#3) Test data with values just above the extreme edges of the input domain i.e. values 2 and 1001.
+
+Boundary Value Analysis is often called as a part of the Stress and Negative Testing.
+
+Note: There is no hard-and-fast rule to test only one value from each equivalence class you created for input domains.
+ You can select multiple valid and invalid values from each equivalence class according to your needs and previous judgments.
+
+For Example, if you divided 1 to 1000 input values invalid data equivalence class,
+ then you can select test case values like 1, 11, 100, 950, etc. Same case for other test cases having invalid data classes.
+
+This should be a very basic and simple example to understand the Boundary Value Analysis and Equivalence Partitioning concept.

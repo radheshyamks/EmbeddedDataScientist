@@ -1,0 +1,13 @@
+def is_almost_similar_using_list_comprehension(test_str1, test_str2, k):
+	counter1 = [test_str1.count(char) for char in set(test_str1)]
+	counter2 = [test_str2.count(char) for char in set(test_str2)]
+	diff = sum(abs(counter1[i] - counter2[i]) for i in range(len(counter1)))
+	return diff >= k
+
+# Testing
+test_str1 = 'aabcdaaa'
+test_str2 = 'abbaccda'
+k = 3
+print(f"Input strings: '{test_str1}', '{test_str2}'")
+print(f"Value of K: {k}")
+print(f"Output: {is_almost_similar_using_list_comprehension(test_str1, test_str2, k)}")

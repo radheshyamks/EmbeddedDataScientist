@@ -1,0 +1,54 @@
+1. enum
+2. bit-field
+3. 
+8438338819
+
+pp_vx_kernel_rgbir_splitter.c
+pp_vx_rgbir_splitter.c
+vx_kernels_pp_cancontrols_target.c
+vx_pp_cc_dms_host.c
+app_remote_service_linux.c
+
+
+csf_thread_video_app_receive.c
+csf_thread_mcu_main_ipc.c
+csf_supervise_daemonize.c
+pp_thermal_app.c
+vx_kernels_pp_cancontrols_host.c
+tivx_pp_cancontrols_node_api.c
+
+vision_apps/apps/basic_demos/app_single_cam/dsp/pp_vx_kernel_rgbir_splitter.c
+vision_apps/apps/basic_demos/app_single_cam/pp_vx_rgbir_splitter.c
+vision_apps/apps/pp_demos/kernels/pp_cancontrols/a72/vx_kernels_pp_cancontrols_target.c
+vision_apps/apps/pp_demos/kernels/pp_cancontrols/host/vx_pp_cc_dms_host.c
+vision_apps/utils/remote_service/src/app_remote_service_linux.c
+
+
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
+
+ramya.mohan@hdfc.com
+Niveda
+
+
+Accont No: 39075042526
+IFSC: SBIN0000187
+
+valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 --track-fds=yes
+
+
+Cyclomatic          TLOC            SLOC            File Name
+30                  163             342             pp_vx_kernel_rgbir_splitter.c
+150                 564             835             pp_vx_rgbir_splitter.c
+2                   2               29              vx_kernels_pp_cancontrols_target.c
+30                  88              201             vx_pp_cc_dms_host.c
+73                  213             421             app_remote_service_linux.c
+------------------------------------------------------------------------------------------------------------------------------------------------
+285                 1030            1828
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+If 60-70 lines of code will be coverd per day, then it will take 50 days at least.

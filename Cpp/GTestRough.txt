@@ -1,0 +1,41 @@
+#include <iostream>
+#include <getvalue.h>
+#include <gtest/gmock.h>
+using namespace std;
+//getvalue.cpp
+using ::testing::Atleast;
+using ::testing::Return;
+using ::testing::_;
+int MyValue::GetValue(int a, int b)
+{
+int c=0;
+MyAddition add;
+c=add.addition(a,b);
+return c;
+}
+
+MyValue::MyValue()
+{
+}
+
+MyValue::~MyValue()
+{
+}
+
+class MyAddition
+{
+	MOCK_METHOD(int, addition, (int a,int b));
+};
+
+TEST(GetValue, subtest){
+ MyAddition add;
+ MyValue abc;
+ EXPECT_CALL(add, addition(_, _))
+		.Times(Atleast(1))
+		.WillOnce(Return(10));
+ EXPECT_EQ(10, abc.GetValue(5,5));
+};
+
+int main(int argc, char* argv[]){
+ ::testing::InitGoo
+}
