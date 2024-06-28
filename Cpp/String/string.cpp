@@ -48,8 +48,12 @@ class String{
             return *this;
             // this->str_ = other.str_;
         }
+        uint32_t lenth(){
+            return this->len;
+        }
         String& operator=(const char* str){
             uint32_t len = strlen(str);
+            this->len = len;
             if(!this->str_){
                 this->str_ = new char[len+1];
             }else{
@@ -63,16 +67,30 @@ class String{
             if(!str_)return;
             delete[] str_;
         }
+        friend std::ostream& operator<<(std::ostream& out, const String& s_);
 };
+std::ostream& operator<<(std::ostream& out, const String& s_){
+    out<<s_.str_<<"\n";
+    return out;
+}
 
 int main(int argc, char* argv[], char** env){
     // printf("%s\n", "Hello Geeks");
     String s = "Hello";
     String s1 = "Bye";
-    String s2 = s1;
-    std::cout<<s2.getval()<<"\n";
+    // it will call copy assignment constructor
+    // String s2 = s1;
+    String s2 = "Hello this is Me!!!!!";
+    // std::cout<<s2.getval()<<"\n";
+    std::cout<<s2;
+    std::cout<<s2.lenth()<<'\n';
     s2 = "Hi How are you!!!";
-    std::cout<<s2.getval()<<"\n";
+    std::cout<<s2;
+    // std::cout<<s2.getval()<<"\n";
+    std::cout<<s.lenth()<<'\n';
+    std::cout<<s1.lenth()<<'\n';
+    std::cout<<s2.lenth()<<'\n';
+    // it will call assignment operator
     s2 = s;
     std::cout<<s2.getval()<<"\n";
     return EXIT_SUCCESS;
