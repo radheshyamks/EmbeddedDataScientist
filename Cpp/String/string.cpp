@@ -14,7 +14,7 @@ class String{
             str_ = nullptr;
             len = 0; 
         };
-        // str_ing()=delete;
+        // string()=delete;
         String(const char* p){
             if(!p) return;
             this->len = strlen(p);
@@ -31,7 +31,7 @@ class String{
             this->str_ = new char[this->len+1];
             strcpy(this->str_,other.str_);
         }
-        // str_ing(char p[]):str_{p}{}
+        // string(char p[]):str_{p}{}
         // assignment operator overloading
         String& operator=(const String& other){
             if(this!=&other){
@@ -67,6 +67,28 @@ class String{
             if(!str_)return;
             delete[] str_;
         }
+        // move constructor
+        String(String&& src){
+            if(!src.str_)return;
+            this->str_ = src.str_;
+            src.str_ = nullptr;
+        }
+        // move assignment operator
+        String& operator=(String&& src){
+            if(this != &src){
+                uint32_t len = src.len;
+                // this->str_ = new char[len+1];
+                this->str_ = src.str_;
+                // strcpy(this->str_, src.str_);
+                // delete[] src.str_;
+                src.str_ = nullptr;
+            }
+            return *this;
+        }
+        // move assignment operator
+        // String& operator=(const char&& s){
+        //     return s;
+        // }
         friend std::ostream& operator<<(std::ostream& out, const String& s_);
 };
 std::ostream& operator<<(std::ostream& out, const String& s_){
@@ -93,5 +115,10 @@ int main(int argc, char* argv[], char** env){
     // it will call assignment operator
     s2 = s;
     std::cout<<s2.getval()<<"\n";
+    // move constructor
+    String s3(std::move(s1));
+    std::cout<<"s3: "<<s3;
+    s3 = std::move("Radheshyam kumar Sing");
+    std::cout<<s3;
     return EXIT_SUCCESS;
 }
