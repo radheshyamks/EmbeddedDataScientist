@@ -168,4 +168,5 @@ git remote show origin
 git remote rename existing_name target_name
 git remote remove remote_name
 git tag -l "v1.0.5.*" --> it will list all the tag start with v1.0.5.
- git tag -a v1.4 -m "my version 1.4" --> creating a tag
+git tag -a v1.4 -m "my version 1.4" --> creating a tag
+git show v1.4
