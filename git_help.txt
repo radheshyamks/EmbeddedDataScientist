@@ -153,3 +153,4 @@ git config user.email
 git config --show-origin rerere.autoUpdate
 git clone URL
 git config --show-origin rerere.autoUpdate
+git restore --staged file_name
