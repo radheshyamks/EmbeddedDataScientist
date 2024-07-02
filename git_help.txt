@@ -154,3 +154,6 @@ git config --show-origin rerere.autoUpdate
 git clone URL
 git config --show-origin rerere.autoUpdate
 git restore --staged file_name
+git checkout -- <file>... to discard changes in working directory
+git reset HEAD <file>... to unstage
+git status -s --> short status
