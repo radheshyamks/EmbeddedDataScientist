@@ -158,3 +158,9 @@ git checkout -- <file>... to discard changes in working directory
 git reset HEAD <file>... to unstage
 git status -s --> short status
 git diff --staged
+git diff --cached
+git rm --cached README
+git log -p -2
+git log --patch -2
+git log --stat
+git remote -v
