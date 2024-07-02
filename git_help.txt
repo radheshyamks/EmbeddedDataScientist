@@ -164,3 +164,6 @@ git log -p -2
 git log --patch -2
 git log --stat
 git remote -v
+git remote show origin
+git remote rename existing_name target_name
+git remote remove remote_name
