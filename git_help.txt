@@ -170,3 +170,15 @@ git remote remove remote_name
 git tag -l "v1.0.5.*" --> it will list all the tag start with v1.0.5.
 git tag -a v1.4 -m "my version 1.4" --> creating a tag
 git show v1.4
+git tag -a v1.2 9fceb02
+git push origin v1.5
+git push origin --tags --> pushing many tags at once
+git checkout v2.0.0
+git checkout -b version2 v2.0.0  
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.unstage 'reset HEAD --'
+git config --global alias.last 'log -1 HEAD'
+git config --global alias.visual '!gitk'
