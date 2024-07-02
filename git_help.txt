@@ -147,3 +147,8 @@ git config --list --show-origin
 git config --global core.editor nano
 git config --global core.editor "code --wait"
 git config --global core.editor vim
+git config --global init.defaultBranch main
+git config user.name
+git config user.email
+git config --show-origin rerere.autoUpdate
+git clone URL
