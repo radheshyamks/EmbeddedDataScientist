@@ -141,3 +141,8 @@ git push origin :refs/tags/v1.0
 git push origin :refs/tags/v1.0
 git config --local user.name "type your name"
 git config --local user.email "type your email"
+git push origin :refs/tags/v1.0
+git config --list
+git config --list --show-origin
+git config --global core.editor nano
+git config --global core.editor "code --wait"
