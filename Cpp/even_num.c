@@ -13,7 +13,7 @@ struct abc{
     uint8_t* std_name;
     float std_ht;
 };
-int main(){
+int main(int argc, char* argv[], char** env){
     // struct abc studendt = {0x123,"Yogesh", 5.8};
     printf("%d\n", LEFTSHIFT(10,2));
     printf("%d\n", RIGHTSHIFT(10,2));
