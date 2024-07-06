@@ -15,6 +15,7 @@ Radhe"011
 Radhe*011
 Radhe&#0) --> MicroSoft Account
 Radhe&0#9) --> Email passwd
+wlan show profile name="Haunted_5G" key=clear
 MitR@&628496
 Maya#*0@35
 0112
