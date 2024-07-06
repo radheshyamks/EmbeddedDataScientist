@@ -4,7 +4,7 @@
 #ifdef MACRO_DEF
 #error "Error message"
 #endif // end if 
-int main()
+int main(int argc, char* argv[], char** env)
 {
  printf("hi\n");
  return 0;
