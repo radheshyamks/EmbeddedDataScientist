@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
+struct name{
 
+} ;
 typedef struct{
     uint8_t ch;
     uint32_t temp;
