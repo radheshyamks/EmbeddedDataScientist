@@ -23,8 +23,8 @@ class MoveSemanticsClass{
         friend std::ostream& operator<<(std::ostream& out, const MoveSemanticsClass<Y>& obj);
 };
 
-template<typename Y>
-std::ostream& operator<<(std::ostream& out,const MoveSemanticsClass<Y>& obj){
+template<typename T>
+std::ostream& operator<<(std::ostream& out,const MoveSemanticsClass<T>& obj){
     out<<*obj.ptr_<<"\n";
     return out;
 }
