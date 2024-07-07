@@ -1,26 +1,24 @@
 #include<stdio.h>
+void fun(int *);
 int main()
 {
-    int i=1,sum=0;
-    /*for(i=1;i<=100;i++)
-    sum=sum+i;
-    printf("%d",sum);*/
+    int i;
+    printf("The value of i = ");
+    scanf("%d",&i);
+    //printf("\n");
+//int v = fun(i);
+fun(&i);
+//printf("The final value of i = %d", v);
+printf("The final value of i = %d",i);
+}
 
-   /* while(i<=100)
-    {
-    sum=sum+i;
+/*int fun(int i)
+{
     i++;
-    }
-    printf("%d",sum);*/
-    do{
-        sum=sum+i;
-        i++;
-    }while(i<=100);
-    printf("%d",sum);
-    /* Adding 1-100 using for loop*/
-    
-    /* Adding 1-100 using while loop*/
+    return i;
+}*/
 
-    /* Adding 1-100 using do-while loop*/
-    return 0;
+void fun(int *ptr)
+{
+    (*ptr)++;
 }
