@@ -33,6 +33,7 @@ class ruleOfThree{
         }
         // III. copy assignment operator;
         ruleOfThree& operator=(const ruleOfThree& obj){
+            std::cout<<"copy assignment\n";
             if(this != &obj){
                 if(this->p_!=nullptr && obj.p_!=nullptr){
                     *this->p_ = *obj.p_;
@@ -46,6 +47,11 @@ class ruleOfThree{
         int get_val(){
             return *this->p_;
         }
+        void update(int x){
+            if(this->p_!=nullptr){
+                *this->p_ = x;
+            }
+        }
 };
 
 int main(int argc,char*argv[], char** env){
@@ -54,5 +60,12 @@ int main(int argc,char*argv[], char** env){
     ruleOfThree obj2(obj1);
     std::cout<<obj1.get_val()<<"\n";
     std::cout<<obj2.get_val()<<"\n";
+    obj2.update(30);
+    std::cout<<obj2.get_val()<<"\n";
+    ruleOfThree obj3;
+    obj3 = obj2;
+    std::cout<<obj3.get_val()<<"\n";
+    obj3.update(50);
+    std::cout<<obj3.get_val()<<"\n";
     return 0;
 }
