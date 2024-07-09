@@ -76,7 +76,7 @@ class ruleOfFive{
         }
         return *this;
     }
-    int GetVal(){
+    const int GetVal()const{
         if(this->p_!=nullptr){
             return *this->p_;
         }else{
