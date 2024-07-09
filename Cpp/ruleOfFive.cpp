@@ -26,6 +26,7 @@ class ruleOfFive{
     }
     // III. Copy Assignment Operator
     ruleOfFive& operator=(ruleOfFive& obj){
+        std::cout<<"Copy Assignment Operator\n";
         if(this!= &obj){
             if(this->p_!=nullptr && obj.p_!=nullptr){
                 *this->p_ = *obj.p_;
@@ -40,6 +41,7 @@ class ruleOfFive{
     }
     // IV. Move Constructor
     ruleOfFive(ruleOfFive&& obj){
+        std::cout<<"Move Constructor\n";
         /*if(this!=&obj){
             if(obj.p_!=nullptr){
                 if(this->p_!=nullptr){
@@ -57,6 +59,7 @@ class ruleOfFive{
     }
     // V. Move Assignement Operator
     ruleOfFive& operator=(ruleOfFive&& obj){
+        std::cout<<"Move Assignement Operator\n";
         if(this!=&obj){
             if(obj.p_ != nullptr){
                 if(this->p_!= nullptr){
@@ -74,5 +77,17 @@ class ruleOfFive{
 };
 
 int main(int argc, char* argv[], char**env){
+    // I. constructor
+    ruleOfFive obj1(new int(30));
+    // II. Copy Constructor
+    // ruleOfFive obj2=obj1;
+    ruleOfFive obj2(obj1);
+    // III. Copy assignment Operator
+    ruleOfFive obj3;
+    obj3=obj2;
+    // IV. Move Constructor
+    ruleOfFive obj4(std::move(obj3));
+    // V. Move assignment operator
+    obj4 = std::move(obj1);
     return 0;
 }
