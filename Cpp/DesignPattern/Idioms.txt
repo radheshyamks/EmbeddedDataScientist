@@ -10,3 +10,41 @@ CRTP --> Curiously Recurring Template pointer
 4. PIMPL
 5. CRTP
 6. Singleton
+
+
+I. Creational Patterns
+1. AbstractFactory
+2. Builder
+3. Factory Method
+4. Prototype
+5. Singleton
+
+II. Structural Patterns
+1. Adapter
+2. Bridge
+3. Composite
+4. Decorator
+5. Facade
+6. Flyweight
+7. Proxy
+
+III. Behavioral Patterns
+1. Chain of Responsibility 
+2. Command
+3. Iterator
+4. Mediator
+5. Memento
+6. Observer
+7. State
+8. Strategy
+9. Template Method 
+10. Visitor
+
+II. StructuralPatterns
+1. Adapter/Adapter.cpp
+2. Bridge/Bridge.cpp
+3. Composite/Composite.cpp
+4. Decorator/Decorator.cpp
+5. Facade/Facade.cpp
+6. Flyweight/Flyweight.cpp
+7. Proxy/Proxy.cpp
