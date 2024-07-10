@@ -39,12 +39,3 @@ III. Behavioral Patterns
 8. Strategy
 9. Template Method 
 10. Visitor
-
-II. StructuralPatterns
-1. Adapter/Adapter.cpp
-2. Bridge/Bridge.cpp
-3. Composite/Composite.cpp
-4. Decorator/Decorator.cpp
-5. Facade/Facade.cpp
-6. Flyweight/Flyweight.cpp
-7. Proxy/Proxy.cpp
