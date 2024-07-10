@@ -1,0 +1,12 @@
+RAII --> Resource Acquisition Is Initialization
+
+PIMPL --> Pointer to impletation
+
+CRTP --> Curiously Recurring Template pointer
+
+1. RAII
+2. State
+3. Smart Pointer
+4. PIMPL
+5. CRTP
+6. Singleton

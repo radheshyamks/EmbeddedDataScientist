@@ -2,6 +2,7 @@
 namespace abc{
     int a;
     int b;
+    class school{};
 }
 int main(int argc, char* argv[], char** env){
     abc::a=10;
