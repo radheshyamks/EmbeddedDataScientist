@@ -4,7 +4,8 @@ namespace abc{
     int b;
     class school{};
 }
-int main(int argc, char* argv[], char** env){
+int main(int argc, char* argv[], 
+char** env){
     abc::a=10;
     abc::b=20;
     std::cout<<abc::a<<'\n'<<abc::b<<'\n';
