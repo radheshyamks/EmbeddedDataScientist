@@ -186,3 +186,11 @@ git config --global alias.visual '!gitk'
 git checkout tagname<v1.0.0>
 # create a branch and checkout with tag v2.0.0
 git checkout -b version2 v2.0.0
+
+git log --oneline --decorate
+git log --oneline --decorate --graph --all
+git switch -c new-branch
+
+git mergetool
+
+git branch --all
