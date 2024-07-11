@@ -29,17 +29,26 @@ void pinMode(uint16_t led, LedPinStatus pinStatus);
 void LedPinSetup(uint16_t led, LedStatus status);
 void setup(void);
 void status(void);
+void AfterStatus(void);
 
 uint16_t led=10;
 uint16_t LedPin=0;
-LedStatus LedState=LOW;
+LedStatus LedState=HIGH;
 LedPinStatus LedPinState=INPUT;
 
 int main(int argc, char* argv[], char** env){
+    AfterStatus();
     setup();
     loop();
     status();
     return 0;
+}
+void AfterStatus(void){
+    printf("led = %u\n",led);
+    printf("LedPin = %u\n",LedPin);
+    printf("LedState = %u\n",LedState);
+    printf("LedPinState = %u\n",LedPinState);
+    printf("LedNumber.Led10 = %u\n\n",LedNumber.Led10);
 }
 void status(void){
     printf("led = %u\n",led);
