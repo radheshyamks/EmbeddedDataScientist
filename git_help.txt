@@ -184,3 +184,5 @@ git config --global alias.last 'log -1 HEAD'
 git config --global alias.visual '!gitk'
 
 git checkout tagname<v1.0.0>
+# create a branch and checkout with tag v2.0.0
+git checkout -b version2 v2.0.0
