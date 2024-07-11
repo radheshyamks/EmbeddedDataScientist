@@ -60,9 +60,9 @@ void status(void){
 // the function loop will run over and over again
 void loop(){
     digitalWrite(led,HIGH); // turn the LED ON(HIGH is the voltage level)
-    delay(100000000); // wait for a second
+    delay(100000000); // wait for two second
     digitalWrite(led,LOW); // turn the LED OFF(LOW is the voltage level)
-    delay(100000000); // wait for a second
+    delay(100000000); // wait for two second
 }
 void setup(void){
     // initialize the digital pin as an output
