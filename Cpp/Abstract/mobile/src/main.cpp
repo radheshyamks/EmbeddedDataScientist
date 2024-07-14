@@ -15,6 +15,9 @@ int main(int argc, char* argv[], char** env){
     customer->setCp(cp1);
     customer->buyCellPhone();
     customer->setCp(cp2);
-    customer->buyCellPhone(); 
+    customer->buyCellPhone();
+    delete customer;
+    delete cp1;
+    delete cp2;
     return EXIT_SUCCESS;
 }
