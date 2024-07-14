@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "led.h"
+extern uint16_t led;
+extern uint16_t LedPin;
+extern LedStatus LedState;
+extern LedPinStatus LedPinState;
 
 int main(int argc, char* argv[], char** env){
     AfterStatus();
