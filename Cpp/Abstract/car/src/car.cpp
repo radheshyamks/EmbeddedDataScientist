@@ -1,36 +1,45 @@
+#include "../header/carHeader.hpp"
+#include <iostream>
+using namespace std;
 namespace CarNameSpace{
-    Car
-}
-    class Car{
-        public:
-            /*pure virtual function*/
-            virtual void wheel(void)=0;
-            virtual void pressure(void)=0;
-            Car();
-            virtual ~Car();
+    Car::Car(){
+        std::cout<<"this is Car class Constructor\n";
     }
-    class Toyota:public Car{
-        public:
-            Toyota();
-            virtual ~Toyota();
-            void wheel(void)override;
-            void pressure(void)override;
+    Car::~Car(){
+        std::cout<<"this is Car class Destructor\n";
     }
-    class BMW:public Car{
-        public:
-            virtual ~BMW();
-            BMW();
-            virtual void wheel(void)override;
-            virtual void pressure(void)override;
+    Toyota::Toyota(){
+        std::cout<<"this is Toyota class Constructor\n";
     }
-    class Customer{
-        private:
-            /*cr is car*/
-            Car* cr;
-        public:
-            virtual ~Customer();
-            Customer();
-            void carSetUp(Car* cp);
-            void Buyer(void);
+    Toyota::~Toyota(){
+        std::cout<<"this is Toyota class Constructor\n";
     }
+    void Toyota::wheel(void){
+        std::cout<<"this is Toyota Wheel\n";
+    }
+    void Toyota::pressure(void){
+        std::cout<<"Toyota class pressure is Normal\n";
+    }
+    BMW::BMW(){
+        std::cout<<"this is BMW class Constructor\n";
+    }
+    BMW::~BMW(){
+        std::cout<<"this is BMW class Destructor\n";
+    }
+    void BMW::wheel(void){
+        std::cout<<"this is BMW wheel\n";
+    }
+    void BMW::pressure(void){
+        std::cout<<"this is BMW pressure\n";
+    }
+    Customer::Customer(){
+        std::cout<<"this is costomer class constructor\n";
+    }
+    Customer::~Customer(){
+        std::cout<<"this is costomer class destructor\n";
+    }
+    void Customer::carSetUp(Car* cp){
+        this->cp = cp;
+    }
+    void Customer::Buyer(void){}
 }
