@@ -18,7 +18,7 @@ namespace CarNameSpace{
         std::cout<<"this is Toyota Wheel\n";
     }
     void Toyota::pressure(void){
-        std::cout<<"Toyota class pressure is Normal\n";
+        std::cout<<"Toyota car pressure is Normal\n";
     }
     BMW::BMW(){
         std::cout<<"this is BMW class Constructor\n";
@@ -30,7 +30,7 @@ namespace CarNameSpace{
         std::cout<<"this is BMW wheel\n";
     }
     void BMW::pressure(void){
-        std::cout<<"this is BMW pressure\n";
+        std::cout<<"BMW car pressure is normal\n";
     }
     Customer::Customer(){
         std::cout<<"this is costomer class constructor\n";
@@ -39,7 +39,12 @@ namespace CarNameSpace{
         std::cout<<"this is costomer class destructor\n";
     }
     void Customer::carSetUp(Car* cp){
-        this->cp = cp;
+        this->cr = cp;
     }
-    void Customer::Buyer(void){}
+    void Customer::wheelType(void){
+        cr->wheel();
+    }
+    void Customer::pressureGauge(void){
+        cr->pressure();
+    }
 }
