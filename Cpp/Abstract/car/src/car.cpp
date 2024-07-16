@@ -37,6 +37,9 @@ namespace CarNameSpace{
     }
     Customer::~Customer(){
         std::cout<<"this is costomer class destructor\n";
+        if(this->cr != nullptr){
+            // delete[] cr;
+        }
     }
     void Customer::carSetUp(Car* cp){
         this->cr = cp;
