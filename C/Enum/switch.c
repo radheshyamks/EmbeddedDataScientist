@@ -14,7 +14,7 @@ int main(){
         t = E_SUCCESS;
     }else if(y==2){
         t = E_ERROR;
-    }else{
+    }else{ 
         t = E_FAILED;
     }
     switch(t){
