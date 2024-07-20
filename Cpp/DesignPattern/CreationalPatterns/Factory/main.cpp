@@ -8,5 +8,9 @@
 using namespace std;
 
 int main(int argc, char* argv[], char** env){
+    Vehicle::Client client;
+    Vehicle::MotorVehicle* bicycle = client.GetMotorVehicleType(BICYCLE);
+
+    delete bicycle;
     return EXIT_SUCCESS;
 }
