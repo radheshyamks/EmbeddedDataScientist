@@ -3,7 +3,7 @@
 #include <cstdio>
 #include <cstdlib>
 
-#include "../header/factoryheader.hpp"
+#include "../header/header.hpp"
 
 using namespace std;
 
