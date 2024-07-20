@@ -14,19 +14,19 @@ namespace Vehical{
         virtual void Reliability(void)=0;
     };
     class Bicycle:public MotorVehicle{
-        virtual void Speed(void);
-        virtual void Durability(void);
-        virtual void Reliability(void);
+        virtual void Speed(void)override;
+        virtual void Durability(void)override;
+        virtual void Reliability(void)override;
     };
     class Truck:public MotorVehicle{
-        virtual void Speed(void);
-        virtual void Durability(void);
-        virtual void Reliability(void);
+        virtual void Speed(void)override;
+        virtual void Durability(void)override;
+        virtual void Reliability(void)override;
     };
     class Buse:public MotorVehicle{
-        virtual void Speed(void);
-        virtual void Durability(void);
-        virtual void Reliability(void);
+        virtual void Speed(void)override;
+        virtual void Durability(void)override;
+        virtual void Reliability(void)override;
     };
 }
 namespace Toy{
@@ -36,19 +36,19 @@ namespace Toy{
         virtual void LongLasting(void)=0;
     };
     class Car:public toy{
-        virtual void Sturdy(void);
-        virtual void Durable(void);
-        virtual void LongLasting(void);
+        virtual void Sturdy(void)override;
+        virtual void Durable(void)override;
+        virtual void LongLasting(void)override;
     };
     class Doll: public toy{
-        virtual void Sturdy(void);
-        virtual void Durable(void);
-        virtual void LongLasting(void);
+        virtual void Sturdy(void)override;
+        virtual void Durable(void)override;
+        virtual void LongLasting(void)override;
     };
     class Puppet: public toy{
-        virtual void Sturdy(void);
-        virtual void Durable(void);
-        virtual void LongLasting(void);
+        virtual void Sturdy(void)override;
+        virtual void Durable(void)override;
+        virtual void LongLasting(void)override;
     };
 }
 #endif /*__FACTORYDESIGN__*/
