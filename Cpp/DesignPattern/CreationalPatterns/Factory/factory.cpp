@@ -19,6 +19,12 @@ namespace Vehicle{
     }
 
     Bicycle::Bicycle(){
+        /* max speed is 35km/hr */
+        _speed = 35;
+        /* max durability is 10years */
+        _Durability = 10;
+        /* Relaibility rating is 5 Star */
+        _Reliability = 5;
         std::cout<<"Bicycle default Constructor\n";
     }
     Bicycle::Bicycle(uint32_t spd,uint32_t durability,uint32_t reliability){
@@ -34,14 +40,15 @@ namespace Vehicle{
         std::cout<<"Bicycle Destructor\n";
     }
     void Bicycle::Speed(void){
-        std::cout<<"Top Speed: "<<_speed<<"\n";
+        std::cout<<"Top Speed: "<<_speed<<"km/hrs\n";
     }
     void Bicycle::Durability(void){
-        std::cout<<"Durability Star:\n";
-        for(uint32_t i=0; i<_Durability; i++){
+        std::cout<<"Durability: "<<_Durability<<"years\n";
+        /*for(uint32_t i=0; i<_Durability; i++){
             std::cout<<"*";
         }
         std::cout<<"\n";
+        */
     }
     void Bicycle::Reliability(void){
         std::cout<<"Reliability Star:\n";
@@ -70,6 +77,12 @@ namespace Vehicle{
     }
     
     Truck::Truck(){
+        /* max speed is 100km/hr */
+        _speed = 100;
+        /* max durability is 40years */
+        _Durability = 40;
+        /* Relaibility rating is 4 Star */
+        _Reliability = 4;
         std::cout<<"Truck default Const\n";
     }
     Truck::Truck(uint32_t spd,uint32_t durability,uint32_t reliability){
@@ -85,14 +98,14 @@ namespace Vehicle{
         std::cout<<"Truck Destructor\n";
     }
     void Truck::Speed(void){
-        std::cout<<"Top Speed: "<<_speed<<"\n";
+        std::cout<<"Top Speed: "<<_speed<<"km/hrs\n";
     }
     void Truck::Durability(void){
-        std::cout<<"Durability Star:\n";
-        for(uint32_t i=0; i<_Durability; i++){
+        std::cout<<"Durability: "<<_Durability<<"years\n";
+        /*for(uint32_t i=0; i<_Durability; i++){
             std::cout<<"*";
         }
-        std::cout<<"\n";
+        std::cout<<"\n";*/
     }
     void Truck::Reliability(void){
         std::cout<<"Reliability Star:\n";
@@ -121,6 +134,12 @@ namespace Vehicle{
     }
     
     Buse::Buse(){
+        /* max speed is 30km/hr */
+        _speed = 110;
+        /* max durability is 30years */
+        _Durability = 30;
+        /* Relaibility rating is 5 Star */
+        _Reliability = 5;
         std::cout<<"Buse default Const\n";
     }
     Buse::Buse(uint32_t spd,uint32_t durability,uint32_t reliability){
@@ -136,14 +155,15 @@ namespace Vehicle{
         std::cout<<"Buse Destructor\n";
     }
     void Buse::Speed(void){
-        std::cout<<"Top Speed: "<<_speed<<"\n";
+        std::cout<<"Top Speed: "<<_speed<<"km/hrs\n";
     }
     void Buse::Durability(void){
-        std::cout<<"Durability Star:\n";
-        for(uint32_t i=0; i<_Durability; i++){
+        std::cout<<"Durability: "<<_Durability<<"years\n";
+        /*for(uint32_t i=0; i<_Durability; i++){
             std::cout<<"*";
         }
         std::cout<<"\n";
+        */
     }
     void Buse::Reliability(void){
         std::cout<<"Reliability Star:\n";
