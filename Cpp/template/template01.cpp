@@ -6,8 +6,8 @@
 #include <cstdbool>
 
 using namespace std;
-// int fun(int, int)=delete;
-template<int, int>int fun(int, int)=delete;
+int fun(int, int)=delete;
+// template<int, int>int fun(int x, int y)=delete;
 // template<typename T1, typename T2>T1 fun(T1 x, T2 y)=delete;
 template<typename T1, typename T2>
 T1 fun(T1 x, T2 y){
@@ -21,6 +21,8 @@ int main(int argc, char* argv[], char** env){
     std::cout<<s3<<"\n";
     int x=30, y=20;
     int k = fun<int, int>(x,y);
+    // int k = fun(x,y); // it will delete the function
+     throw compiler error
     std::cout<<k<<"\n";
     return EXIT_SUCCESS;
 }
