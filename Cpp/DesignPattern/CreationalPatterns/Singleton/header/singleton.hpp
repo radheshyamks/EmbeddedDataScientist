@@ -7,7 +7,7 @@
 using namespace std;
 
 namespace SingleTon{
-    class Singleton{
+    class Singleton final{
         private:
             uint32_t k;
             uint32_t uniqueId;
