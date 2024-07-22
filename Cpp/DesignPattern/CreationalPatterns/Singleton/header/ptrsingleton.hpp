@@ -8,6 +8,8 @@
 using namespace std;
 namespace SingleTonPtr{
     class SingletonPtr{
+        // public:
+        //     static SingletonPtr* singleton_;
         private:
             static SingletonPtr* singleton_;
             std::string value_;
@@ -24,7 +26,7 @@ namespace SingleTonPtr{
             static SingletonPtr* GetInstance(const std::string& value);
             void BussinessLogic(void);
             std::string value(void)const;
-            // void clear(void);
+            static void clear(void);
     };
     // void ThreadBar(void*);
     // void ThreadFoo(void*);

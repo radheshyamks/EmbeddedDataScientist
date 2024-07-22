@@ -5,6 +5,7 @@
 #include <cstdint>
 #include <chrono>
 #include <thread>
+#include <memory>
 // #include <cthread>
 
 // #include <stdio.h>
@@ -15,7 +16,7 @@
 using namespace std;
 using std::cout;
 namespace SingleTonPtr{
-    SingletonPtr* SingletonPtr::singleton_=nullptr;
+    // SingletonPtr* SingletonPtr::singleton_=nullptr;
     SingletonPtr::SingletonPtr(){
         value_ = "Radheshyam";
         std::cout<<"Default Constructor\n";
@@ -26,9 +27,10 @@ namespace SingleTonPtr{
     }
     SingletonPtr::~SingletonPtr(){
         if(singleton_ != nullptr){
-            delete[] singleton_;
+            // delete[] singleton_;
             singleton_=nullptr;
         }
+        singleton_=nullptr;
         std::cout<<"Destructor\n";
     }
     SingletonPtr* SingletonPtr::GetInstance(const std::string& value){
@@ -43,11 +45,12 @@ namespace SingleTonPtr{
     void SingletonPtr::BussinessLogic(void){
         std::cout<<"Data manupulation statements\n";
     }
-    // void SingletonPtr::clear(void){
-    //     if(singleton_ != nullptr){
-    //         delete[]singleton_;
-    //     }
-    // }
+    void SingletonPtr::clear(void){
+        if(singleton_ != nullptr){
+            delete[]singleton_;
+        }
+        std::cout<<"deleted resources\n";
+    }
 //     void ThreadBar(void*p){
 //         // std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 //         SingletonPtr* singleton = SingletonPtr::GetInstance("FOO");
@@ -60,6 +63,7 @@ namespace SingleTonPtr{
 //         std::cout << singleton->value() << "\n";
 //     }
 }
+SingleTonPtr::SingletonPtr* singleton_=nullptr;
 int main(int argc, char* argv[], char** env){
     // std::thread t1(ThreadFoo);
     // std::thread t2(ThreadBar);
@@ -70,15 +74,17 @@ int main(int argc, char* argv[], char** env){
     // t2.join();
     // SingleTonPtr
     SingleTonPtr::SingletonPtr*instance = SingleTonPtr::SingletonPtr::GetInstance("This is me");
+    // std::unique_ptr<SingleTonPtr::SingletonPtr*>instance = std::make_unique(SingleTonPtr::SingletonPtr::GetInstance("This is me"));
     std::cout<<instance->value()<<"\n";
-    delete[] instance;
-    std::cout<<instance->value()<<"\n";
-    if(instance != nullptr){
-        instance->value();
-    }else{
-        std::cout<<instance<<"\n";
-    }
-    
-    // instance->clear();
+    // delete[] instance;
+    // std::cout<<instance->value()<<"\n";
+    // if(instance != nullptr){
+    //     instance->value();
+    // }else{
+    //     std::cout<<instance<<"\n";
+    // }
+    // delete[] instance;
+    instance->clear();
+    // delete[] SingleTonPtr::SingletonPtr::singleton_;
     return EXIT_SUCCESS;
 }
