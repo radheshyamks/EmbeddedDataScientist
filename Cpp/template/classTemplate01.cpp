@@ -15,7 +15,12 @@ class Abc{
         Abc& operator=(Abc&&); // move assignment operator
         T getVal(void)const;
         void updateVal(T);
+        T operator*(void)const;
 };
+template<typename T>
+T Abc<T>::operator*(void)const{
+    return *this->ptr_;
+}
 template<typename T>
 void Abc<T>::updateVal(T data){
     *this->ptr_ = data;
@@ -85,6 +90,10 @@ Abc<T>::~Abc(){
 }
 int main(int argc, char* argv[], char** env){
     Abc<int> obj(new int(10));
+    std::cout<<obj.getVal()<<"\n";
+    std::cout<<*obj<<"\n";
+    obj.updateVal(20);
+    std::cout<<*obj<<"\n";
     // Abc<std::string> obj1;
     return 0;
 }
