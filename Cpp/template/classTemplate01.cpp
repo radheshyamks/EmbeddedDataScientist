@@ -13,9 +13,9 @@ class Abc{
         Abc(Abc&&); // move constructor
         Abc& operator=(const Abc&); // copy assignment operator
         Abc& operator=(Abc&&); // move assignment operator
+        T operator*(void)const;/* overloading dereference operator */
         T getVal(void)const;
         void updateVal(T);
-        T operator*(void)const;
 };
 template<typename T>
 T Abc<T>::operator*(void)const{
