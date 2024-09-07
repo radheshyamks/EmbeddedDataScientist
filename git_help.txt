@@ -194,3 +194,19 @@ git switch -c new-branch
 git mergetool
 
 git branch --all
+
+# stashing your changes
+git stash
+
+# to see the stashed files
+git stash list
+
+# to pop out the stash files one by one.
+git stash pop
+git stash drop
+# To apply the most recent stash (and keep it in the stash list), use:
+git stash apply
+# you want to apply a specific stash
+git stash apply stash@{1}
+# Creating the branch with stashed files
+git stash branch my-feature-branch
