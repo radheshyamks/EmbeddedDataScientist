@@ -210,3 +210,19 @@ git stash apply
 git stash apply stash@{1}
 # Creating the branch with stashed files
 git stash branch my-feature-branch
+
+# To clean the stash on by one
+git stash drop stash@{1}
+# To clean the all stash in single command
+git stash clear
+
+# to clean the git directory
+
+# To see what files and folders would be discarded (without actually deleting anything)
+git clean -n -d
+# If you’re sure you want to delete everything under untracked (and you’ve double-checked!)
+git clean -f
+# To delete folders along with files, use
+git clean -f -d
+# delete in interactive mode
+git clean -i
