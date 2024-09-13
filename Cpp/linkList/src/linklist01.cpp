@@ -14,18 +14,21 @@ DataLinkList::LinkList::LinkList(DataLink*initPtr){
 }
 DataLinkList::LinkList::~LinkList(){
     DataLink*p = head;
+    DataLink*t;
     std::cout<<"Destructor\n";
     while(p!=nullptr){
-        head=p->Next;
+        t=p->Next;
         delete p;
-        p = head;
+        p = t;
     }
+    head = p;
 }
 DataLinkList::LinkList::DataLink* 
 DataLinkList::LinkList::NodeCreation(uint32_t val){
     DataLink*nodePtr;
     nodePtr = new DataLink;
     if(nodePtr!=nullptr){
+        listEleCnt++;
         nodePtr->data = val;
         nodePtr->Next = nullptr;
         return nodePtr;
@@ -52,14 +55,41 @@ void DataLinkList::LinkList::deleteNode(uint32_t pos){
         std::cout<<"List is Empty\n";
         return;
     }else{
+        if(pos<1 || pos>listEleCnt){
+            std::cout<<"Index is out of range\n";
+            return;
+        }
         DataLink*tmpPtr = head;
         DataLink*tmp = head;
         uint16_t cnt=0;
-        while(tmp){
+        if(tmp->Next!=nullptr){
             tmp = tmpPtr->Next;
-            cnt++;
-            if(cnt==pos){}
-            tmpPtr = tmp;
+            cnt=1;
+            while(tmp!=nullptr){
+                cnt++;
+                if(pos==2 && tmp==nullptr){
+                    head->Next = nullptr;
+                    delete tmp;
+                }else if(pos==2 && tmp->Next!=nullptr){
+                    head->Next = tmp->Next;
+                    delete tmp;
+                }else if(cnt==pos && tmp->Next!=nullptr){
+                    tmpPtr->Next=tmp->Next;
+                    delete tmp;
+                }else if(cnt==pos && tmp->Next==nullptr){
+                    tmpPtr->Next=nullptr;
+                    delete tmp;
+                }else{
+                    // std::cout<<"position is out of range\n";
+                    // return;
+                    tmpPtr = tmp;
+                    tmp = tmp->Next;
+                }
+                // tmpPtr = tmp;
+            }
+        }else{
+            delete tmp;
+            head = nullptr;
         }
         return;
     }
