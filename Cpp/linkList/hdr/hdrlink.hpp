@@ -18,6 +18,7 @@ namespace DataLinkList{
                 uint32_t data; /* The value in this node */
                 struct DataLink*Next; /* To point to the Next node */
             }DataLink;
+            uint16_t listEleCnt;
             DataLink*head; /* List head pointer */
         public:
             /* struct DataLink*Head=nullptr; */
