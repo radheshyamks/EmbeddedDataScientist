@@ -89,7 +89,7 @@ void DataLinkList::LinkList::deleteNode(uint32_t pos){
             }
         }else{
             delete tmp;
-            // assinging nullptr to the head ptr
+            // assigning nullptr to the head ptr
             head = nullptr;
         }
         return;
