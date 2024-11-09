@@ -1,11 +1,13 @@
 What is unique Pointer?
+std::unique_ptr is a smart pointer that owns (is responsible for) and manages another object via a pointer 
+and subsequently disposes of that object when the unique_ptr goes out of scope.
 Syntax:
     unique_ptr<A> ptr1 (new A);
     std::unique_ptr<A> ptr_name = std::make_unique_ptr(new A);
     template< class T,  class Deleter = std::default_delete<T>> class unique_ptr;
     template <class T, class Deleter> class unique_ptr<T[], Deleter>;
 properties of Uniq_ptr:
-    1)
+    1) It does not support CopyConstructor nor CopyAssignment operator
     2)
     3)
     4)
