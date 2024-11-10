@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include <stdint.h>
+uint8_t timer;
+uint8_t timer_cnt;
+void TimerReset(void);
 enum abc{
     CONDUNDEF=0,
     POWEROFF,
@@ -23,10 +26,12 @@ int main(int argc, char* argv[], char** env){
         printf("%d ", arr[i]);
     }
     printf("\n");
+    printf("Enter PwrBtn value: ");
     scanf("%d", &PwrBtn);
     switch(PwrBtn){
         case RESET1:
             printf("RESET1 = %d\n", PwrBtn);
+            TimerReset();
             break;
         case POWEROFF1:
             printf("POWEROFF1 = %d\n", PwrBtn);
@@ -40,4 +45,9 @@ int main(int argc, char* argv[], char** env){
     }
     printf("\n");
     return 0;
+}
+void TimerReset(void){
+    timer=0;
+    timer_cnt=0;
+    return;
 }
