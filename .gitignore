@@ -3,3 +3,4 @@
 !CMakeLists.txt
 *.txt
 **/build
+!**/CMakeLists.txt
