@@ -1,4 +1,5 @@
 !*read*.txt
 !read.txt
-!**/CMakeLists.txt
+!CMakeLists.txt
 *.txt
+**/build
