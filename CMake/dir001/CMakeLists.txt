@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.30)
 # message("***********First command***********")
 # cmake -G "MinGW Makefiles" -S ../ -B ./
+message(${CMAKE_CURRENT_BINARY_DIR})
+message(${CMAKE_CURRENT_SOURCE_DIR})
 project(mainExe)
 # set(CMAKE_C_COMPILER "C:/MinGW/bin/gcc.exe")
 set(CMAKE_CXX_COMPILER "C:/MinGW/bin/g++.exe")
