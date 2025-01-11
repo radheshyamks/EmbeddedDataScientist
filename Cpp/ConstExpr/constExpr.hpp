@@ -7,4 +7,5 @@
 #define __CONSTEXPR__
 #include <cstdint>
 extern constexpr uint16_t ConstExpr_fun(void);
+extern void fun(void);
 #endif //__CONSTEXPR__

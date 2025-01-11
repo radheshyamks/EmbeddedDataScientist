@@ -24,6 +24,7 @@ int main(int argc, char* argv[], char** env){
         // /*constexpr*/int k = ConstExpr::arr[0];
         std::cout<<k<<"\n";
     }
+    fun();
     constexpr int x = ConstExpr_fun();
     std::cout<<x<<"\n";
     return EXIT_SUCCESS;
