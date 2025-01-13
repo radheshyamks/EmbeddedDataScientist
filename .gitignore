@@ -4,3 +4,4 @@
 *.txt
 **/build
 !**/CMakeLists.txt
+*.exe
